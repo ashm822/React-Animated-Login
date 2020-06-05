@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
-}
+body {
+  font-family: "Karla", sans-serif;
+  background-image: url('./img/grey.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh; 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.brand-wrapper {
+  background-position: center;
+  margin-bottom: 19px; 
+  display: flex;
+  justify-content: center;   
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.brand-wrapper .logo {
+    height: 60px; 
+    width: 250px;
+    margin-right: 0px;
+    display: flex;
+
 }
+
+.login-card {
+  border: 1;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden; 
+  top: 25vh;
+  height: 500px;
+  width:500px;
+  size: 85% !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+  .login-card .card-body {
+    padding: 15px; 
+  }
+    @media (max-width: 422px) {
+      .login-card .card-body {
+        padding: 35px 24px; 
+      }       
+    }
+
+  .login-card-description {
+    font-size: 25px;
+    color: #000;
+    font-weight: normal;
+    padding: 0 55px;
+    margin-bottom: 23px; 
+    justify-content: center;
+    width:100%;
+  }
+
+  .login-card form {
+    width: 400px;
+    max-width: 400px; 
+  }
+
+  .form-control {
+    border: 1px solid #d5dae2;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    min-height: 45px;
+    font-size: 13px;
+    font-weight: normal; 
+  }
+    .login-card .form-control::-webkit-input-placeholder {
+      color: #919aa3; 
+    }
+
+    .login-card .form-control::-moz-placeholder {
+      color: #919aa3;
+     
+    }
+    .login-card .form-control:-ms-input-placeholder {
+      color: #919aa3; 
+    }
+
+    .login-card .form-control::-ms-input-placeholder {
+      color: #919aa3; 
+    }
+
+    .login-card .form-control::placeholder {
+      color: #919aa3; 
+    }
+  .login-card .login-btn {
+    padding: 13px 10px 12px;
+    background-color: #000;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 30px !important; 
+  }
+    .login-card .login-btn:hover {
+      border: 1px solid #000;
+      background-color: transparent;
+      color: #000; 
+    
+    }
+    
+  .login-card .forgot-password-link {
+    font-size: 14px;
+    color: #919aa3;
+    margin-bottom: 12px; 
+  }
+
+  .login-card-footer-text {
+    font-size: 16px;
+    color: #0d2366;
+    margin-bottom: 70px; 
+  }
+
+    @media (max-width: 767px) {
+      .login-card-footer-text {
+        margin-bottom: 24px; } 
+    }
+
+  .login-card-footer-nav a {
+    font-size: 14px;
+    color: #919aa3; 
+  
+  }
+
+/*# sourceMappingURL=login.css.map */
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-200px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}   
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* @keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(200px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX();
+  }
+}   
+
+.fadeInTop {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+.animated2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+ */
+
+
+ 
